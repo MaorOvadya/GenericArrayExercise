@@ -11,15 +11,15 @@ public static void main(String[] args) throws Exception {
 
     }
 
-        public static <T extends Comparable<T>> T array_max(T [] arrayList)  {
-            T max = arrayList[0];
-
-            for(T value : arrayList){
-            if(value.compareTo(max) > 0){
+        public static <T extends Comparable<T>> T array_max(T [] arrayList) { // T = value , [] = Array + parameter
+            T max = arrayList[0]; 
+            
+            for(T value : arrayList){ // Clean loop T=generic || value = T = Int/integer/double : array parameter
+                if(value.compareTo(max) > 0){  // sorting which value is max in array 
                  max = value;
             }
         }
-        System.out.println(max);   
+             System.out.println(max);   
             return max;
         }
 }
